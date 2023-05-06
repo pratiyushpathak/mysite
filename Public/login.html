@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+    <title>Me/Login</title>
+    
+<script>  
+function validateform(){  
+var name=document.myform.name.value;  
+var password=document.myform.password.value;  
+  
+if(name=="Pratiyush" && password=="Pathak")
+{
+    document.getElementById("b1").innerHTML=`<a href="./Index.html">Go Back To</a>`
+} 
+else{
+    alert("Enter Correct Details")
+}
+}  
+</script>  
+</head>
+<body>
+    
+</body>
+</html><div class="log-form">
+    <h2>Login to your account</h2>
+   
+    
+    <form name="myform" onsubmit="validateform()" action="Index.html">  
+        Name: <input type="text" name="name" required><br/>  
+        Password: <input type="password" name="password" required><br/>  
+        <input type="submit" value="Login">  
+        </form>
+        <br>
+        <!-- <button id="b1" onclick="validateform()">Login</button> -->
+  </div>
