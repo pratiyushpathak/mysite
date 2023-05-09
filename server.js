@@ -6,15 +6,15 @@ var app = express();
 app.use(express.static(path.join(__dirname,'Public')));
 
 app.get('/', function (req, res) {
-    res.sendFile(path.join(___dirname + '/Index.html'));
+    res.sendFile(path.join(__dirname, 'Public','/Index.html'));
  });
 
  app.get('/contact', function (req, res) {
-  res.sendFile(path.join(___dirname + '/Contact.html'));
+  res.sendFile(path.join(__dirname, 'Public', '/Contact.html'));
 });
 
 app.get('/login', function (req, res) {
-  res.sendFile(path.join(___dirname + '/login.html'));
+  res.sendFile(path.join(__dirname, 'Public', 'login.html'));
 });
 
 
